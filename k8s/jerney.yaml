@@ -246,7 +246,7 @@ spec:
 
       containers:
         - name: backend
-          image: ghcr.io/kavivanank/Jerney/jerney-backend:1a2f003
+          image: ghcr.io/kavivanank/Jerney/jerney-backend:0d68532
 
           ports:
             - containerPort: 5000
@@ -372,7 +372,7 @@ spec:
 
       containers:
         - name: frontend
-          image: ghcr.io/kavivanank/Jerney/jerney-frontend:1a2f003
+          image: ghcr.io/kavivanank/Jerney/jerney-frontend:0d68532
 
           ports:
             - containerPort: 8080
