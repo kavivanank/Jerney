@@ -1,7 +1,7 @@
 # --------------------------------------------------
 # Build Stage
 # --------------------------------------------------
-FROM node:20-alpine3.21 AS build
+FROM node:26.2-alpine3.22 AS build
 
 WORKDIR /app
 
@@ -26,7 +26,7 @@ RUN npm cache clean --force
 # --------------------------------------------------
 # Production Stage
 # --------------------------------------------------
-FROM node:20-alpine3.21 AS production
+FROM node:26.2-alpine3.22 AS production
 
 # Install security updates + dumb-init
 RUN apk update && apk upgrade --no-cache && \
