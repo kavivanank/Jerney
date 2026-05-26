@@ -1,6 +1,8 @@
 # ----Build Stage----
 FROM node:24-alpine AS build
 
+RUN apk update && apk upgrade --no-cache
+
 WORKDIR /app
 
 COPY package.json package.json* package-lock.json ./
